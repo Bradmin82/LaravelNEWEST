@@ -1,8 +1,10 @@
 <nav class="navbar has-shadow" >
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item is-paddingless brand-item" href="{{route('home')}}">
-        <img src="{{asset('images/devmarketer-logo.png')}}" alt="DevMarketer logo">
+     <!-- <a class="navbar-item is-paddingless brand-item" href="{{route('home')}}">-->
+	<a class="navbar-item is-paddingless brand-item" href="/">
+       <!-- <img src="{{asset('images/devmarketer-logo.png')}}" alt="DevMarketer logo">-->
+	<h4>BW Marketing</h4>
       </a>
 
       @if (Request::segment(1) == "manage")

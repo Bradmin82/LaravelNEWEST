@@ -84,7 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    DevMarketer.io
+                    <a href="http://bradweldy.com">BradWeldy.com</a>
                 </div>
             </div>
         </div>
