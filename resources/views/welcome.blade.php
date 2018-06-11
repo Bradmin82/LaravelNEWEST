@@ -17,13 +17,25 @@
 
         <!-- Styles -->
         <style>
+            .fraud {
+                padding: 0px 10%;
+            }
+
             html, body {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
-                font-weight: 100;
+                /*font-weight: 100;*/
+                font-weight: 800;
                 height: 100vh;
                 margin: 0;
+            }
+            #app .content h4 {
+                font-weight: 800;
+            }
+            #app .content h6 {
+                font-weight: 800;
+                font-size: 24px;
             }
 
             .full-height {
@@ -52,6 +64,19 @@
 
             .title {
                 font-size: 84px;
+            }
+            @media (max-width: 767px) {
+                .title {
+                    font-size: 46px;
+                    margin: 20px 5px;
+                    margin-top: 150px;
+                }
+                .fraud {
+                    padding: 0px 5%;
+                }
+                .fraud h4 {
+                    font-size: 38px!important;
+                }
             }
 
             .links > a {
@@ -86,9 +111,11 @@
                 <div class="title m-b-md">
                     <a href="http://bradweldy.com">BradWeldy.com</a>
                 </div>
+                {{-- <div id="nelson" class="fraud"><p>If you are a developer and would like to know more about this domain, or my past experience with:</p><h6>Mr. Nelson Tovar</h6><p>A quick inspection of this page can shed light on your curiosity.</p><p>OR</p><h6 style="font-size: 20px;">Run the function 'myExperience'</h6><p>P.S. js is enabled on this site :)</div> --}}
             </div>
         </div>
 
         <script src="{{asset('js/app.js')}}" type="text/javascript"></script>
+        <script src="{{asset('js/myExperience.js')}}" type="text/javascript"></script>
     </body>
 </html>

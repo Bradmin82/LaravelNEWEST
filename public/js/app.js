@@ -963,7 +963,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
-module.exports = __webpack_require__(49);
+module.exports = __webpack_require__(40);
 
 
 /***/ }),
@@ -984,14 +984,14 @@ Slug.defaults.mode = 'rfc3986';
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 
-Vue.component('slug-widget', __webpack_require__(39));
+// Vue.component('slug-widget', require('./components/slugWidget.vue'));
 
 var app = new Vue({
   el: '#app',
   data: {}
 });
 
-__webpack_require__(48);
+__webpack_require__(39);
 
 /***/ }),
 /* 11 */
@@ -30256,6 +30256,8 @@ module.exports={166:{"value":"00A6","name":"BROKEN BAR","category":"So","class":
 
 /***/ }),
 /* 39 */
+<<<<<<< HEAD
+=======
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -31259,6 +31261,7 @@ if (false) {
 
 /***/ }),
 /* 48 */
+>>>>>>> b60c08ff649898caf768ebbfc77f5bf11bf81357
 /***/ (function(module, exports) {
 
 var accordions = document.getElementsByClassName('has-submenu');
@@ -31296,7 +31299,7 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 /***/ }),
-/* 49 */
+/* 40 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
