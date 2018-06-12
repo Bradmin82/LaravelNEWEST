@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laravel</title>
+        <title>Rancho Web Designs</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -109,13 +109,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <a href="http://bradweldy.com">BradWeldy.com</a>
+                    <a href="http://bradweldy.com">Rancho Web Designs</a>
                 </div>
                 {{-- <div id="nelson" class="fraud"><p>If you are a developer and would like to know more about this domain, or my past experience with:</p><h6>Mr. Nelson Tovar</h6><p>A quick inspection of this page can shed light on your curiosity.</p><p>OR</p><h6 style="font-size: 20px;">Run the function 'myExperience'</h6><p>P.S. js is enabled on this site :)</div> --}}
             </div>
         </div>
 
         <script src="{{asset('js/app.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/myExperience.js')}}" type="text/javascript"></script>
     </body>
 </html>

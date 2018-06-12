@@ -1,4 +1,0 @@
-  function myExperience() {
-    document.getElementById('nelson').innerHTML = '<div class="fraud"><h4 style="color: #00d1b2; font-size: 42px; font-weight: 800;">Do you know NELSON TOVAR?</h4><p>Due to the number of developers that have been calling/txting/emailing me,<br />I have created this script as a precaution to you.</p><p>In my experience, Nelson Tovar\'s offer may be fraudulent.</p><p style="padding-top: 25px;">He requests to pay with credit card.  He asks if he may overpay you for your dev fees so that you may pay his consultant for him, as he claims he is having issues with liquidity and withdrawing cash.  <span style="color: red;">You must pay the consultant in cash or with a cashiers check.</span><h4>Tell this guy to go pound sand!</h4></div>';
-  }
-  console.log('If you were duped, as I was, and wasted any time on a proposal, this page/script is for you.');

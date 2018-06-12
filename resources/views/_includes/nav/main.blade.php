@@ -4,7 +4,7 @@
      <!-- <a class="navbar-item is-paddingless brand-item" href="{{route('home')}}">-->
 	<a class="navbar-item is-paddingless brand-item" href="/">
        <!-- <img src="{{asset('images/devmarketer-logo.png')}}" alt="DevMarketer logo">-->
-	<h4>BW Marketing</h4>
+	<h4>Rancho Web Designs</h4>
       </a>
 
       @if (Request::segment(1) == "manage")
