@@ -27,21 +27,21 @@
     <ul class="menu-list">
       <li><a href="{{route('users.index')}}" class="{{Nav::isResource('users')}}">Manage Users</a></li>
       <li>
-        <a class="has-submenu {{Nav::hasSegment(['roles', 'permissions'], 2)}}">Roles &amp; Permissions</a>
+        <a href="{{route('permissions.index')}}" class="has-submenu {{Nav::hasSegment(['roles', 'permissions'], 2)}}">Roles &amp; Permissions</a>
         <ul class="submenu">
           <li><a href="{{route('roles.index')}}" class="{{Nav::isResource('roles')}}">Roles</a></li>
           <li><a href="{{route('permissions.index')}}" class="{{Nav::isResource('permissions')}}">Permissions</a></li>
         </ul>
       </li>
       <li>
-        <a class="has-submenu">Example Accordion</a>
+        <a class="has-submenu">Your Account</a>
         <ul class="submenu">
           <li><a href="{{route('roles.index')}}">Roles</a></li>
           <li><a href="{{route('permissions.index')}}">Permissions</a></li>
         </ul>
       </li>
       <li>
-        <a class="has-submenu">Another Example</a>
+        <a class="has-submenu">CC Roles</a>
         <ul class="submenu">
           <li><a href="{{route('roles.index')}}">Roles</a></li>
           <li><a href="{{route('permissions.index')}}">Permissions</a></li>

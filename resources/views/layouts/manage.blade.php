@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Rancho Web Design - MANAGEMENT</title>
+    <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

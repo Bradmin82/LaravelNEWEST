@@ -73,7 +73,7 @@ class UserController extends Controller
 
       return redirect()->route('users.show', $user->id);
 
-      // if () {
+      // if ($user->save()) {
       //
       // } else {
       //   Session::flash('danger', 'Sorry a problem occurred while creating this user.');
@@ -140,7 +140,7 @@ class UserController extends Controller
       $user->syncRoles(explode(',', $request->roles));
       return redirect()->route('users.show', $id);
 
-      // if () {
+      // if ($user->save()) {
       //   return redirect()->route('users.show', $id);
       // } else {
       //   Session::flash('error', 'There was a problem saving the updated user info to the database. Try again later.');
