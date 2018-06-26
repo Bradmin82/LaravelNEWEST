@@ -1,6 +1,10 @@
 {
   "private": true,
+<<<<<<< HEAD
   "name": "brad-weldy-marketing",
+=======
+  "name": "RanchoWebDesigns",
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
   "description": "Rancho Web Designs and Advanced Blog/CMS",
   "version": "1.0.0",
   "license": "MIT",
@@ -15,17 +19,17 @@
   },
   "devDependencies": {
     "axios": "^0.16.2",
-    "buefy": "^0.5.4",
-    "bulma": "^0.5.3",
-    "cross-env": "^5.0.1",
+    "buefy": "^0.6.6",
+    "bulma": "^0.7.1",
+    "cross-env": "^5.2.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.1.1",
+    "jquery": "^3.3.1",
     "laravel-mix": "^1.5",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.10",
     "slug": "^0.9.1",
-    "vue": "^2.5.3"
+    "vue": "^2.5.16"
   },
   "dependencies": {
-    "vue-template-compiler": "^2.5.3"
+    "vue-template-compiler": "^2.5.16"
   }
 }

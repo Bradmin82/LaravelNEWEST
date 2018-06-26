@@ -50,11 +50,17 @@
             }
             .title img {
 	            max-width:200px; display: inline-block; z-index: 99;
+<<<<<<< HEAD
 	            filter: drop-shadow(-30px 10px 60px #fff);
             }
             .title h1 {
 				display:inline-block;font-size:60px; font-weight:600;vertical-align: middle; z-index: 99;
 				filter: drop-shadow(-30px 10px 20px #fff);
+=======
+            }
+            .title h1 {
+				display:inline-block;font-size:60px; font-weight:600;vertical-align: middle;padding-bottom:50px; z-index: 99;
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
             }
             #app .content h4 {
                 font-weight: 800;
@@ -98,6 +104,17 @@
                     margin: 20px 5px;
                     margin-top: 150px;
                     flex-direction: column;
+<<<<<<< HEAD
+=======
+                }
+                .title img {
+	                display: block;
+	                z-index: 99;
+                }
+                .title h1 {
+	                display:block;
+	                z-index: 99;
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
                 }
                 .title img {
 	                display: block;
@@ -146,6 +163,7 @@
 			    min-width: 100vw; 
 			    min-height: 100vh;
 			    z-index: 1;
+<<<<<<< HEAD
 				filter: grayscale(75%);
             }
             .overlay {
@@ -156,6 +174,19 @@
 			    min-height: 100vh;
 			    z-index: 2;
 			}
+=======
+/* 			    display: none; */
+            }
+/*
+            #myVideo {
+			    position: fixed;
+			    right: 0;
+			    bottom: 0;
+			    min-width: 100%; 
+			    min-height: 100%;
+			}
+*/
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
         </style>
     </head>
     <body>
@@ -182,12 +213,20 @@
 	                <div id="hpbg">
 {{--                 	
 						<video autoplay muted loop id="myVideo">
+<<<<<<< HEAD
 							<source src="#" type="video/mp4">
 						</video>
 	--}}					
 {{--						<iframe width="480" height="270" src="https://www.youtube.com/embed/ParkVumHd0s?autoplay=1&loop=1&rel=0&controls=0&modestbranding=0&showinfo=0" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
 --}}
 						<div class="overlay"></div>
+=======
+							<source src="https://www.youtube.com/embed/ParkVumHd0s" type="video/mp4">
+						</video>
+	--}}					
+{{--						<iframe width="480" height="270" src="https://www.youtube.com/embed/ParkVumHd0s?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+--}}
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
 						<div id="player"></div>
 
 					</div>
@@ -219,14 +258,19 @@
 			    playerVars: {
 			      autoplay: 1, // start automatically
 			      controls: 0, // don't show the controls (we can't click them anyways)
+<<<<<<< HEAD
 			      modestbranding: 0, // show smaller logo
 			      rel: 0,
 			      showinfo: 0,
+=======
+			      modestbranding: 2, // show smaller logo
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
 			      loop: 1, // loop when complete
 			      playlist: 'kNizPk7xBbs' // required for looping, matches the video ID
 			    }
 			  });
 			}
+<<<<<<< HEAD
 
 			function screenMax() {
 				// vanilla JS window width and height
@@ -264,6 +308,8 @@
 		
 		});
 */
+=======
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
 	    </script>
     </body>
 </html>

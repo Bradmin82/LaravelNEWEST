@@ -63,6 +63,10 @@ class UserController extends Controller
         $user->syncRoles(explode(',', $request->roles));
       }
       return redirect()->route('users.show', $user->id);
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
       // if ($user->save()) {
       //
       // } else {
@@ -124,6 +128,10 @@ class UserController extends Controller
       $user->save();
       $user->syncRoles(explode(',', $request->roles));
       return redirect()->route('users.show', $id);
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
       // if ($user->save()) {
       //   return redirect()->route('users.show', $id);
       // } else {

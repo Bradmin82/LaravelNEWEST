@@ -11,7 +11,11 @@ import Buefy from 'buefy';
 import Buefy from 'node_modules/buefy/src/scss/buefy';
 Vue.use(Buefy);
 
+<<<<<<< HEAD
 //Vue.component(Buefy.Checkbox.name, Buefy.Checkbox);
+=======
+Vue.component(Buefy.Checkbox.name, Buefy.Checkbox);
+>>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
 var app = new Vue({
     el: '#app',
 	data: {
