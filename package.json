@@ -1,10 +1,6 @@
 {
   "private": true,
-<<<<<<< HEAD
-  "name": "brad-weldy-marketing",
-=======
   "name": "RanchoWebDesigns",
->>>>>>> e2f1bc213964c13ff4f16848abd77eae020c6d21
   "description": "Rancho Web Designs and Advanced Blog/CMS",
   "version": "1.0.0",
   "license": "MIT",
@@ -27,9 +23,12 @@
     "laravel-mix": "^1.5",
     "lodash": "^4.17.10",
     "slug": "^0.9.1",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
   },
   "dependencies": {
+    "node-sass": "^4.9.0",
     "vue-template-compiler": "^2.5.16"
   }
 }
