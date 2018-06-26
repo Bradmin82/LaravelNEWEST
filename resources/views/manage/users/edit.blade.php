@@ -30,20 +30,24 @@
 
           <div class="field">
             <label for="password" class="label">Password</label>
-            <b-radio-group v-model="password_options">
+<!--             <b-radio-group v-model="password_options"> -->
               <div class="field">
-                <b-radio name="password_options" value="keep">Do Not Change Password</b-radio>
+<!--                 <b-radio name="password_options" value="keep" v-model="password_options" native-value="keep">Do Not Change Password</b-radio> -->
+				<input name="password_options" value="keep" v-model="password_options" native-value="keep" type="radio" />
+				<label>Do Not Change Password</label>
               </div>
               <div class="field">
-                <b-radio name="password_options" value="auto">Auto-Generate New Password</b-radio>
+                <input name="password_options" value="auto" v-model="password_options" native-value="auto" type="radio" />
+	            <label>Auto-Generate New Password</label>
               </div>
               <div class="field">
-                <b-radio name="password_options" value="manual">Manually Set New Password</b-radio>
+                <input name="password_options" value="manual" v-model="password_options" native-value="manual" type="radio" />
+	            <label>Manually Set New Password</label>
                 <p class="control">
                   <input type="text" class="input" name="password" id="password" v-if="password_options == 'manual'" placeholder="Manually give a password to this user">
                 </p>
               </div>
-            </b-radio-group>
+<!--             </b-radio-group> -->
           </div>
         </div> <!-- end of .column -->
 
@@ -53,9 +57,14 @@
 
             @foreach ($roles as $role)
               <div class="field">
-                <b-checkbox v-model="rolesSelected" :native-value="{{$role->id}}">{{$role->display_name}}</b-checkbox>
+                <b-checkbox v-model="rolesSelected" name="{{$role->id}}" :native-value="{{$role->id}}">{{$role->display_name}}</b-checkbox>	
+<!--
+				<input v-model="rolesSelected" name="{{$role->id}}" :native-value="{{$role->id}}" type="checkbox" />
+				<label>{{$role->display_name}}</label>
+-->
               </div>
             @endforeach
+
         </div>
       </div>
       <div class="columns">

@@ -4,6 +4,7 @@
      <!-- <a class="navbar-item is-paddingless brand-item" href="{{route('home')}}">-->
 	<a class="navbar-item is-paddingless brand-item" href="/">
        <!-- <img src="{{asset('images/devmarketer-logo.png')}}" alt="DevMarketer logo">-->
+	   <img src="{{asset('images/RanchoWebDesigns-logo.png')}}" alt="Rancho Web Designs logo">
 	<h4>Rancho Web Designs</h4>
       </a>
 
@@ -23,16 +24,16 @@
     </div>
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item is-tab is-active">Learn</a>
-        <a class="navbar-item is-tab">Discuss</a>
-        <a class="navbar-item is-tab">Share</a>
+        <a class="navbar-item is-tab is-active">Account</a>
+        <a class="navbar-item is-tab">Campaigns</a>
+        <a class="navbar-item is-tab">Progress</a>
       </div> <!-- end of .navbar-start -->
 
 
       <div class="navbar-end nav-menu" style="overflow: visible">
         @guest
           <a href="{{route('login')}}" class="navbar-item is-tab">Login</a>
-          <a href="{{route('register')}}" class="navbar-item is-tab">Join the Community</a>
+          <a href="{{route('register')}}" class="navbar-item is-tab">Get Started</a>
         @else
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Hey {{Auth::user()->name}}</a>

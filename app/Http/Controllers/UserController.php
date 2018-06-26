@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\User;
 use App\Role;
@@ -9,7 +7,6 @@ use DB;
 use Session;
 use Hash;
 use Input;
-
 class UserController extends Controller
 {
     /**
@@ -22,7 +19,6 @@ class UserController extends Controller
       $users = User::orderBy('id', 'desc')->paginate(10);
       return view('manage.users.index')->withUsers($users);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -33,7 +29,6 @@ class UserController extends Controller
       $roles = Role::all();
       return view('manage.users.create')->withRoles($roles);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -46,7 +41,6 @@ class UserController extends Controller
         'name' => 'required|max:255',
         'email' => 'required|email|unique:users'
       ]);
-
       if (!empty($request->password)) {
         $password = trim($request->password);
       } else {
@@ -60,27 +54,22 @@ class UserController extends Controller
         }
         $password = $str;
       }
-
       $user = new User();
       $user->name = $request->name;
       $user->email = $request->email;
       $user->password = Hash::make($password);
       $user->save();
-
       if ($request->roles) {
         $user->syncRoles(explode(',', $request->roles));
       }
-
       return redirect()->route('users.show', $user->id);
-
-      // if () {
+      // if ($user->save()) {
       //
       // } else {
       //   Session::flash('danger', 'Sorry a problem occurred while creating this user.');
       //   return redirect()->route('users.create');
       // }
     }
-
     /**
      * Display the specified resource.
      *
@@ -92,7 +81,6 @@ class UserController extends Controller
       $user = User::where('id', $id)->with('roles')->first();
       return view("manage.users.show")->withUser($user);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -105,7 +93,6 @@ class UserController extends Controller
       $user = User::where('id', $id)->with('roles')->first();
       return view("manage.users.edit")->withUser($user)->withRoles($roles);
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -119,7 +106,6 @@ class UserController extends Controller
         'name' => 'required|max:255',
         'email' => 'required|email|unique:users,email,'.$id
       ]);
-
       $user = User::findOrFail($id);
       $user->name = $request->name;
       $user->email = $request->email;
@@ -136,18 +122,15 @@ class UserController extends Controller
         $user->password = Hash::make($request->password);
       }
       $user->save();
-
       $user->syncRoles(explode(',', $request->roles));
       return redirect()->route('users.show', $id);
-
-      // if () {
+      // if ($user->save()) {
       //   return redirect()->route('users.show', $id);
       // } else {
       //   Session::flash('error', 'There was a problem saving the updated user info to the database. Try again later.');
       //   return redirect()->route('users.edit', $id);
       // }
     }
-
     /**
      * Remove the specified resource from storage.
      *
